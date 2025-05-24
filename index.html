@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-container shadow shadow-md bg-light" id="quizAppContainer">
+        <div class="container">
+            <div class="row m-2">
+                <div class="col-12 p-4">
+                    <h1 class="main-heading">Quiz Game Application</h1>
+                </div>
+                <div class="col-12">
+                    <ol class="ordered-list">
+                        <li class="mb-3">
+                            <p class="quation-name">
+                                Which country won the ICC Men's T20 World Cup 2024?
+                            </p>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q1" value="England" id="valA">
+                                <label for="valA" class="ml-2"> England</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q1" value="India" id="valB">
+                                <label for="valB" class="ml-2">India</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q1" value="South Africa" id="valC">
+                                <label for="valC" class="ml-2">South Africa</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q1" value="Australia" id="valD">
+                                <label for="valD" class="ml-2">Australia</label>
+                            </div>
+                            <p id="questionOneAnswer" class="result-text"></p>
+                        </li>
+
+                        <li class="mb-3">
+                            <p class="quation-name">
+                                Who was named the Player of the Tournament in the 2024 T20 World Cup?
+                            </p>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q2" value="Virat Kohli" id="val2A">
+                                <label for="val2A" class="ml-2">Virat Kohli</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q2" value="Jasprit Bumrah" id="val2B">
+                                <label for="val2B" class="ml-2">Jasprit Bumrah</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q2" value="David Warner" id="val2C">
+                                <label for="val2C" class="ml-2">David Warner</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q2" value="Babar Azam" id="val2D">
+                                <label for="val2D" class="ml-2">Babar Azam</label>
+                            </div>
+                            <p id="questionTwoAnswer" class="result-text"></p>
+                        </li>
+
+                        <li class="mb-3">
+                            <p class="quation-name">
+                                Which two countries co-hosted the 2024 T20 World Cup?
+                            </p>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q3" value="India and Bangladesh" id="val3A">
+                                <label for="val3A" class="ml-2">India and Bangladesh</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q3" value="England and Scotland" id="val3B">
+                                <label for="val3B" class="ml-2">England and Scotland</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q3" value="Australia and New Zealand" id="val3C">
+                                <label for="val3C" class="ml-2">Australia and New Zealand</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q3" value="United States and West Indies" id="val3D">
+                                <label for="val3D" class="ml-2">United States and West Indies</label>
+                            </div>
+                            <p id="questionThreeAnswer" class="result-text"></p>
+                        </li>
+
+                        <li class="mb-3">
+                            <p class="quation-name">
+                                How many teams participated in the 2024 T20 World
+                            </p>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q4" value="16" id="val4A">
+                                <label for="val4A" class="ml-2">16</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q4" value="18" id="val4B">
+                                <label for="val4B" class="ml-2">18</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q4" value="20" id="val4C">
+                                <label for="val4C" class="ml-2">20</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q4" value="22" id="val4D">
+                                <label for="val4D" class="ml-2">22</label>
+                            </div>
+                            <p id="questionFourAnswer" class="result-text"></p>
+                        </li>
+
+                        <li class="mb-3">
+                            <p class="quation-name">
+                                Which player scored the most runs in the 2024 T20 World Cup?
+                            </p>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q5" value="Virat Kohli" id="val5A">
+                                <label for="val5A" class="ml-2">Virat Kohli</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q5" value="Babar Azam" id="val5B">
+                                <label for="val5B" class="ml-2">Babar Azam</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q5" value="Rahmanullah Gurbaz" id="val5C">
+                                <label for="val5C" class="ml-2">Rahmanullah Gurbaz</label>
+                            </div>
+                            <div class="p-1 custom-options ml-4">   
+                                <input type="radio" name="q5" value="Jos Buttler" id="val5D">
+                                <label for="val5D" class="ml-2">Jos Buttler</label>
+                            </div>
+                            <p id="questionFiveAnswer" class="result-text"></p>
+                        </li>
+                    </ol>
+                    <div class="text-center">
+                        <button class="custom-btn" id="submitBtn">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="quizResultContainer">
+        <div id="resultBgContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

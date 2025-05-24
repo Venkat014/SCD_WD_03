@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: 110vh;
+}
+.bg-container {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    /*color: #fff;
+    background-image: linear-gradient(45deg, #1c5d9c,#da2c5a, #02a7d1); */
+}
+.main-heading {
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+.ordered-list {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    /*background-color: #81c6ff;*/
+    font-family: "Roboto", sans-serif;
+}
+.quation-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+.custom-options {
+    padding: 10px 10px;
+    margin-bottom: 5px;
+}
+input[type="radio"]{
+    width: 15px;
+    height: 15px;
+    accent-color: #008000;
+}
+.custom-btn {
+    width: 160px;
+    border-width: 0px;
+    background-color: #2222e9;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.ordered-list label {
+    cursor: pointer;
+}
+input[type='radio'] {
+    cursor: pointer;
+}
+.result-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+.result-bg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.result-card-container {
+    color: #000;
+    width: 300px;
+}
+.result-name {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+.result-scrote-text {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #000;
+}
+.practice-btn {
+    color: #fff;
+    width: 180px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    background-color: #2222e9;
+    border-width: 0px;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.passed-wishes {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #1b08f0f0;
+}
+.failed-wishes {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #ff0000;
+}
+.failed-status {
+    width: 70px;
+    margin: auto;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    background-color: #cfdce7;
+    color: #ff0000;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+.passed-status {
+    width: 70px;
+    margin: auto;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    background-color: #cfdce7;
+    color: #2707f9;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
